@@ -34,3 +34,6 @@ IP-CIDR,208.67.220.220/32,no-resolve
 DOMAIN-SUFFIX,meijumi.net
 DOMAIN-SUFFIX,mjmtv.vip
 DOMAIN-SUFFIX,mjmtv.top
+
+#小雅
+domain-suffix,nn.ci
