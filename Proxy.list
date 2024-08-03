@@ -14,6 +14,7 @@ IP-CIDR,103.115.43.2/32,no-resolve
 DOMAIN-SUFFIX,dns.google
 DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
 DOMAIN-SUFFIX,dot.sb
+DOMAIN-SUFFIX,meijumi.net
 DOMAIN-SUFFIX,dns.umbrella.com
 DOMAIN-SUFFIX,dns.quad9.net
 DOMAIN-SUFFIX,dns.google
