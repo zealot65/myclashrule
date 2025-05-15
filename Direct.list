@@ -595,3 +595,5 @@ DOMAIN-SUFFIX,ip138.com/
 DOMAIN-SUFFIX,qimiao.com
 #四川教育网
 DOMAIN-SUFFIX,sedu.net
+#电脑时间
+DOMAIN-SUFFIX,wns.windows.com
