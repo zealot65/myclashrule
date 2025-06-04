@@ -2,7 +2,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "https://sub1.sntp.dev/baseStr?token=9943c770338d77af4e2705e44e540cb5&timestamp=2622"
+    url: "。。。"
     type: http
     interval: 86400
     health-check:
