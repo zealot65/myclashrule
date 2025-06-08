@@ -600,3 +600,5 @@ DOMAIN-SUFFIX,wns.windows.com
 DOMAIN-SUFFIX,time.windows.com
 #qimiao
 DOMAIN-SUFFIX,qimiao.com
+#高德地图
+DOMAIN-SUFFIX,amap.com/
