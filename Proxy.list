@@ -43,9 +43,9 @@ DOMAIN-SUFFIX,maxroll.gg
 #teamviewer
 DOMAIN-SUFFIX,teamviewer.cn
 DOMAIN-SUFFIX,teamviewer.com
-domain-suffix,blizzard.com
+DOMAIN-SUFFIX,blizzard.com
 
 #听宇网
-domain-suffix,teandy.com
+DOMAIN-SUFFIX,teandy.com
 
 
