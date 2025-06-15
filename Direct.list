@@ -603,4 +603,4 @@ DOMAIN-SUFFIX,qimiao.com
 #高德地图
 DOMAIN-SUFFIX,amap.com
 #api 中转
-domain-suffix,mnapi.com
+DOMAIN-SUFFIX,mnapi.com
