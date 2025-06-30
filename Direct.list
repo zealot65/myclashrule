@@ -604,3 +604,6 @@ DOMAIN-SUFFIX,qimiao.com
 DOMAIN-SUFFIX,amap.com
 #api 中转
 DOMAIN-SUFFIX,mnapi.com
+
+#fast.com
+DOMAIN-SUFFIX,fast.com
