@@ -218,11 +218,11 @@ rules:
   - RULE-SET,Nintend / Domain,Game
   - RULE-SET,Google / Domain,Google
   - RULE-SET,Google / IP,Google,no-resolve
-  - RULE-SET,Proxy / class,myproxy
+  - RULE-SET,国外 / class,myproxy
   - RULE-SET,Proxy / Domain,Proxy
   - RULE-SET,Globe / Domain,Globe  
   - RULE-SET,Direct / Domain,china
-  - RULE-SET,Direct / class,mydirect
+  - RULE-SET,国内 / class,mydirect
   - RULE-SET,China / Domain,china
   - RULE-SET,China / IP,china,no-resolve
   - RULE-SET,Private / Domain,Private
