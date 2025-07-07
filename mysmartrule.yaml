@@ -127,7 +127,7 @@ proxy-groups:
     uselightgbm: true
     collectdata: true
     interval: 300
-    filter: ""(?!.*深)(?=.*(港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$""
+    filter: "(?!.*深)(?=.*(港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
  
   # 台湾组
   - name: 台湾-智选
@@ -204,13 +204,11 @@ proxy-groups:
 # ========================
 rules:
 
-  - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block  
   - RULE-SET,AI / Domain,AI
   - RULE-SET,GitHub / Domain,GitHub
   - RULE-SET,Microsoft / Domain,Microsoft
   - RULE-SET,Youtube / Domain,YouTube
-  - RULE-SET,TikTok / Domain,TikTok
   - RULE-SET,Steam / Domain,Steam
   - RULE-SET,Epic / Domain,Game
   - RULE-SET,EA / Domain,Game
@@ -220,13 +218,14 @@ rules:
   - RULE-SET,Nintend / Domain,Game
   - RULE-SET,Google / Domain,Google
   - RULE-SET,Google / IP,Google,no-resolve
-  - RULE-SET,Globe / Domain,
-  - RULE-SET,Proxy / Domain,国外
-  - RULE-SET,Globe / Domain,国外  
-  - RULE-SET,Direct / Domain,国内
-  - RULE-SET,China / Domain,国内
-  - RULE-SET,China / IP,国内,no-resolve
-  - RULE-SET,Private / Domain,国内
+  - RULE-SET,Globe / Domain,myproxy
+  - RULE-SET,Proxy / Domain,Proxy
+  - RULE-SET,Globe / Domain,Globe  
+  - RULE-SET,Direct / Domain,china
+  - RULE-SET,Direct / Domain,mydirect
+  - RULE-SET,China / Domain,china
+  - RULE-SET,China / IP,china,no-resolve
+  - RULE-SET,Private / Domain,Private
   - MATCH,其他
 
 # ========================
