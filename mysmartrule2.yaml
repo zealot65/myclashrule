@@ -108,6 +108,7 @@ chatgpt-proxies: &chatgpt_proxies ["🔯 日本故转", "🔯 台湾故转", "�
 
 proxy-groups:
   - name: 🚀 默认代理, type: select, proxies: *all_proxies_common
+  
   - name: 📹 YouTube
     type: select
     proxies:
