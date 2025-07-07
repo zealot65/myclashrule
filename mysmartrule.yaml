@@ -2,7 +2,7 @@
 # 机场节点订阅
 proxy-providers:
 
-  火烧云:
+  机场一:
     url: "机场订阅地址"
     type: http
     interval: 86400
@@ -12,7 +12,7 @@ proxy-providers:
       interval: 300
     proxy: 直连 
     
-  冰云:
+  机场二:
     url: "机场订阅地址"
     type: http
     interval: 86400
