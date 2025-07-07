@@ -129,7 +129,7 @@ proxy-groups:
   - {name: ♻️ 日本智能, type: smart, uselightgbm: true, collectdata: true, include-all: true, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
   - {name: ♻️ 台湾智能, type: smart, uselightgbm: true, collectdata: true, include-all: true, interval: 300, filter: "(?=.*(台|台湾|tw|taiwan))^((?!(港|新|韩|日|美)).)*$" }
   - {name: ♻️ 美国智能, type: smart, uselightgbm: true, collectdata: true, include-all: true, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
-  - {name: ♻️ 自动选择, type: type: smart, uselightgbm: true, collectdata: true, include-all: true, policy-priority: "(?i)香港|hk|hongkong|港:1.5", tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
+  - {name: ♻️ 自动选择, type: smart, uselightgbm: true, collectdata: true, include-all: true, policy-priority: "(?i)香港|hk|hongkong|港:1.5", tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
 
 # 规则匹配
