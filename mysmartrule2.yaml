@@ -170,7 +170,7 @@ rule-anchor:
 rule-providers: 
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   proxylite: { <<: *class, https://raw.githubusercontent.com/zealot65/myclashrule/refs/heads/main/Proxy.list"}
-  directlist: { <<: *class, https://raw.githubusercontent.com/zealot65/myclashrule/refs/heads/main/Proxy.list"}
+  directlist: { <<: *class, https://raw.githubusercontent.com/zealot65/myclashrule/refs/heads/main/Direct.list"}
   ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
