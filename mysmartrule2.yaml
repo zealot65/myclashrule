@@ -137,7 +137,7 @@ rules:
   - RULE-SET,game,🎮 游戏
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 默认代理
-  - RULE-SET,directlist,direct
+  - RULE-SET,directlist,DIRECT
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
