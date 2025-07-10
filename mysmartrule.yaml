@@ -89,7 +89,6 @@ default: &default
     - 新加坡-智选
     - 韩国-智选
     - 美国-智选
-    - 英国-智选
     - 其他-智选
     - 拒绝
 
@@ -97,29 +96,13 @@ proxy-groups:
 
   # 业务分流组
   - {name: ChatGPT, <<: *default}
-  - {name: Claude, <<: *default}
-  - {name: Meta AI, <<: *default}
-  - {name: Perplexity, <<: *default}
   - {name: GitHub, <<: *default}
-  - {name: Telegram, <<: *default}
-  - {name: Twitter(X), <<: *default}
-  - {name: WhatsApp, <<: *default}
-  - {name: Facebook, <<: *default}
   - {name: YouTube, <<: *default}
-  - {name: TikTok, <<: *default}
-  - {name: Disney, <<: *default}
-  - {name: Netflix, <<: *default}
-  - {name: HBO, <<: *default}
-  - {name: Spotify, <<: *default}
-  - {name: Amazon, <<: *default}
-  - {name: Apple, <<: *default}
   - {name: Microsoft, <<: *default}
   - {name: Google, <<: *default}
-  - {name: Nvidia, <<: *default}
   - {name: Steam, <<: *default}
   - {name: Game, <<: *default}
   - {name: Crypto, <<: *default}
-  - {name: Test, <<: *default}
   - {name: Block, <<: *default}
   - {name: 国外, <<: *default}
   - {name: 国内, <<: *default}
@@ -199,16 +182,6 @@ proxy-groups:
     interval: 300
     filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
 
-  # 英国组
-  - name: 英国-智选
-    type: smart
-    include-all: true
-#   policy-priority: "牛逼:0.8"
-    uselightgbm: true
-    collectdata: true
-    interval: 300
-    filter: "(?=.*(英国|英|伦敦|UK|United Kingdom|🇬🇧|London)).*$"
-
   # 其他组
   - name: 其他-智选
     type: smart
@@ -227,39 +200,17 @@ rules:
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Block / Domain,Block  
   - RULE-SET,ChatGPT / Domain,ChatGPT
-  - RULE-SET,Claude / Domain,Claude
-  - RULE-SET,Meta AI / Domain,Meta AI
-  - RULE-SET,Perplexity / Domain,Perplexity
   - RULE-SET,GitHub / Domain,GitHub
-  - RULE-SET,Telegram / Domain,Telegram
-  - RULE-SET,Telegram / IP,Telegram,no-resolve
-  - RULE-SET,Twitter / Domain,Twitter(X)
-  - RULE-SET,WhatsApp / Domain,WhatsApp
-  - RULE-SET,Facebook / Domain,Facebook
-  - RULE-SET,Amazon / Domain,Amazon
-  - RULE-SET,Apple / Domain,Apple
-  - RULE-SET,Apple-CN / Domain,Apple  
   - RULE-SET,Microsoft / Domain,Microsoft
-  - RULE-SET,OKX / Domain,Crypto
-  - RULE-SET,Bybit / Domain,Crypto
-  - RULE-SET,Binance / Domain,Crypto
   - RULE-SET,Youtube / Domain,YouTube
-  - RULE-SET,TikTok / Domain,TikTok
-  - RULE-SET,Netflix / Domain,Netflix
-  - RULE-SET,Netflix / IP,Netflix,no-resolve
-  - RULE-SET,Disney / Domain,Disney
-  - RULE-SET,HBO / Domain,HBO
-  - RULE-SET,Spotify / Domain,Spotify
   - RULE-SET,Steam / Domain,Steam
   - RULE-SET,Epic / Domain,Game
   - RULE-SET,EA / Domain,Game
   - RULE-SET,Blizzard / Domain,Game
   - RULE-SET,UBI / Domain,Game
   - RULE-SET,PlayStation / Domain,Game
-  - RULE-SET,Nintend / Domain,Game
   - RULE-SET,Google / Domain,Google
   - RULE-SET,Google / IP,Google,no-resolve
-  - RULE-SET,Nvidia / Domain,Nvidia
   - RULE-SET,Proxy / Domain,国外
   - RULE-SET,Globe / Domain,国外  
   - RULE-SET,Direct / Domain,国内
@@ -277,7 +228,6 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 
 rule-providers:
-  TEST / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Check.list"}
   ChatGPT / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"}
   Claude / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list"}
   Meta AI / Domain: {<<: *class, url: "https://gh-proxy.com/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/MetaAi.list"}
