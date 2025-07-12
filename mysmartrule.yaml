@@ -92,7 +92,7 @@ default: &default
 proxy-groups:
 
   # 业务分流组
-  - {name: ai, <<: *default}
+  - {name: AI, <<: *default}
   - {name: GitHub, <<: *default}
   - {name: YouTube, <<: *default}
   - {name: Microsoft, <<: *default}
@@ -195,7 +195,7 @@ rules:
 
   - RULE-SET,directlist,DIRECT
   - RULE-SET,Block / Domain,Block  
-  - RULE-SET,ai / Domain,ai
+  - RULE-SET,AI,AI
   - RULE-SET,GitHub / Domain,GitHub
   - RULE-SET,Microsoft / Domain,Microsoft
   - RULE-SET,Youtube / Domain,YouTube
@@ -227,7 +227,7 @@ rule-providers:
   ChatGPT / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"}
   proxylite: { <<: *class, url: "https://raw.githubusercontent.com/zealot65/myclashrule/refs/heads/main/Proxy.list"}
   directlist: { <<: *class, url: "https://raw.githubusercontent.com/zealot65/myclashrule/refs/heads/main/Direct.list"}
-  ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
+  AI: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   GitHub / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"}
   Telegram / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs"}  
   Telegram / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs"}
