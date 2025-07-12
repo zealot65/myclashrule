@@ -92,14 +92,13 @@ default: &default
 proxy-groups:
 
   # 业务分流组
-  - {name: ChatGPT, <<: *default}
+  - {name: ai, <<: *default}
   - {name: GitHub, <<: *default}
   - {name: YouTube, <<: *default}
   - {name: Microsoft, <<: *default}
   - {name: Google, <<: *default}
   - {name: Steam, <<: *default}
   - {name: Game, <<: *default}
-  - {name: Crypto, <<: *default}
   - {name: Block, <<: *default}
   - {name: 国外, <<: *default}
   - {name: 国内, <<: *default}
@@ -196,7 +195,7 @@ rules:
 
   - RULE-SET,directlist,DIRECT
   - RULE-SET,Block / Domain,Block  
-  - RULE-SET,ChatGPT / Domain,ChatGPT
+  - RULE-SET,ai / Domain,ai
   - RULE-SET,GitHub / Domain,GitHub
   - RULE-SET,Microsoft / Domain,Microsoft
   - RULE-SET,Youtube / Domain,YouTube
