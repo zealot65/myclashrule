@@ -138,6 +138,7 @@ rules:
   - RULE-SET,onedrive_domain,🐬 OneDrive
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,apple_domain,直连
+  - RULE-SET,speedtest_domain,直连
   - RULE-SET,telegram_domain,📲 Telegram
   - RULE-SET,netflix_domain,🎥 NETFLIX
   - RULE-SET,apple_ip,直连,no-resolve
