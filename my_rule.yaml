@@ -125,10 +125,11 @@ proxy-groups:
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
-
+  - {name: 🛑 广告拦截, type: select, proxies: [REJECT, 直连]} 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
+  - RULE-SET,adblock,🛑 广告拦截
   - RULE-SET,directlist,直连
   - RULE-SET,proxylist,🚀 默认代理
   - RULE-SET,ai,🤖 ChatGPT
@@ -177,3 +178,4 @@ rule-providers:
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
   apple_ip: {<<: *ip, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo-lite/geoip/apple.mrs"}
+  adblock: { <<: *domain, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"}
