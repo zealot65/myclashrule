@@ -610,6 +610,6 @@ DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,speedtest.net
 
 #steam 下载
-DOMAIN-KEYWORD,steamcontent,DIRECT
-DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
-DOMAIN-SUFFIX,steampowered.com,DIRECT
+#DOMAIN-KEYWORD,steamcontent,DIRECT
+#DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+#DOMAIN-SUFFIX,steampowered.com,DIRECT
