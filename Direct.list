@@ -604,6 +604,7 @@ DOMAIN-SUFFIX,amap.com
 
 #api 中转
 DOMAIN-SUFFIX,mnapi.com
+DOMAIN-SUFFIX,tu-zi.com
 
 #fast.com
 DOMAIN-SUFFIX,fast.com
