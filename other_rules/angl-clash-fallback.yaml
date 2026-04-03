@@ -68,7 +68,7 @@ dns:
     - +.gptacg.top
     - +.wxda.net
 
-ipv6: true
+ipv6: false
 
 # ========================
 # TUN 模块
