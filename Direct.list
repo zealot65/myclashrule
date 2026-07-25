@@ -611,5 +611,7 @@ DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,speedtest.net
 
 #steam 下载
-DOMAIN-KEYWORD,steamcontent,DIRECT
-DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+DOMAIN-KEYWORD,steamcontent
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+#cloudrive2
+DOMAIN-SUFFIX,zhenyunpan.com
