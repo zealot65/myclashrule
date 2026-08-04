@@ -610,8 +610,21 @@ DOMAIN-SUFFIX,tu-zi.com
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,speedtest.net
 
-#steam 下载
+#steam 下载/更新/内容CDN（网站和论坛仍走代理）
 DOMAIN-KEYWORD,steamcontent
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
+DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+DOMAIN-SUFFIX,steamstore-a.akamaihd.net
+DOMAIN-SUFFIX,steampipe.akamaized.net
+DOMAIN-SUFFIX,steampipe-kr.akamaized.net
+DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+DOMAIN-SUFFIX,steambroadcast.akamaized.net
+DOMAIN-SUFFIX,steammobile.akamaized.net
+
 #cloudrive2
 DOMAIN-SUFFIX,zhenyunpan.com
