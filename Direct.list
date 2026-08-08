@@ -613,7 +613,7 @@ DOMAIN-SUFFIX,speedtest.net
 #steam 下载/更新/内容CDN（网站和论坛仍走代理）
 DOMAIN-KEYWORD,steamcontent
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
-DOMAIN-SUFFIX,steamstatic.com
+# DOMAIN-SUFFIX,steamstatic.com
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
 DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
