@@ -126,19 +126,6 @@ proxy-groups:
     use:
       - provider1
 
-  - name: "🎶 TikTok"
-    type: select
-    proxies:
-      - "🚀 手动选择"
-      - "♻️ 自动选择"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🇼🇸 台湾节点"
-      - "🇰🇷 韩国节点"
-    use:
-      - provider1
 
   - name: "📹 YouTube"
     type: select
@@ -506,7 +493,6 @@ rules:
   - "GEOSITE,microsoft,Ⓜ️ 微软服务"
   - "GEOSITE,googlefcm,📢 谷歌FCM"
   - "GEOSITE,google,🇬 谷歌服务"
-  - "GEOSITE,tiktok,🎶 TikTok"
   - "GEOSITE,netflix,🎥 Netflix"
   - "GEOSITE,disney,🎥 DisneyPlus"
   - "GEOSITE,hbo,🎥 HBO"
